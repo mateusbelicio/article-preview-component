@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
+
+:root {
+  /* Font size */
+  --fs-100: 0.625rem; // 10px
+  --fs-200: 0.75rem; // 12px
+  --fs-300: 0.8125rem; // 13px
+  --fs-400: 1rem; // 16px
+  --fs-500: 1.125rem; // 18px
+  --fs-600: 1.5rem; // 24px
+  --fs-700: 2.625rem; // 42px
+  --fs-800: 3rem; // 48px
+  --fs-900: 3.5rem; // 48px
+
+  /* Font family */
+  --ff-manrope: 'Manrope', sans-serif;
+
+  /* Font weigth */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+
+// Font family
+$ff-default: var(--ff-manrope);
+
+// Font size
+$fs-100: var(--fs-100);
+$fs-200: var(--fs-200);
+$fs-300: var(--fs-300);
+$fs-400: var(--fs-400);
+$fs-500: var(--fs-500);
+$fs-600: var(--fs-600);
+$fs-700: var(--fs-700);
+$fs-800: var(--fs-800);
+$fs-900: var(--fs-900);
+
+// Font weight
+$fw-400: var(--fw-regular);
+$fw-500: var(--fw-medium);
+$fw-700: var(--fw-bold);
