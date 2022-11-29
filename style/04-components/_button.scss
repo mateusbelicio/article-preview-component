@@ -1,0 +1,22 @@
+.button {
+  background-color: $clr-neutral-400;
+  z-index: 10;
+
+  &[data-active='true'] {
+    background-color: $clr-primary-400;
+
+    svg path {
+      fill: $clr-neutral-100;
+    }
+  }
+
+  &[data-active='true'] + .popup {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.2s ease-out;
+
+    @include breakpoint(800) {
+      transform: translateX(50%) translateX(0) scale(1);
+    }
+  }
+}

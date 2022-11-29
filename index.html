@@ -10,11 +10,64 @@
     <title>Frontend Mentor | Article preview component</title>
 
     <link rel="stylesheet" href="./style/index.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
-    Shift the overall look and feel by adding these wonderful touches to furniture in your home Ever
-    been in a room and felt like something was missing? Perhaps it felt slightly bare and
-    uninviting. I’ve got some simple tips to help you make any room feel complete. Michelle Appleton
-    28 Jun 2020 Share
+    <main>
+      <article class="card | container">
+        <picture class="card__image">
+          <img
+            src="./images/drawers.jpg"
+            alt="Image of a pleasant environment with a green closet and some decoration objects on it"
+          />
+        </picture>
+        <section class="card__content">
+          <header class="card__header">
+            <h1 class="card__title">
+              Shift the overall look and feel by adding these wonderful touches to furniture in your
+              home
+            </h1>
+            <p class="card__description">
+              Ever been in a room and felt like something was missing? Perhaps it felt slightly bare
+              and uninviting. I’ve got some simple tips to help you make any room feel complete.
+            </p>
+          </header>
+          <footer class="card__footer">
+            <img
+              class="card__profile-picture"
+              src="./images/avatar-michelle.jpg"
+              alt="Profile picture of Michelle Appleton"
+            />
+            <div class="card__profile-content">
+              <h2 class="card__author">Michelle Appleton</h2>
+              <p class="card__date">28 Jun 2020</p>
+            </div>
+            <button class="card__button button" data-active="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                <path
+                  fill="#6E8098"
+                  d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+                />
+              </svg>
+            </button>
+
+            <div class="popup">
+              <span class="popup__text">Share</span>
+              <ul class="popup__social-links">
+                <li class="popup__social-link">
+                  <a href="#"><img src="./images/icon-facebook.svg" alt="Facebook icon" /></a>
+                </li>
+                <li class="popup__social-link">
+                  <a href="#"><img src="./images/icon-twitter.svg" alt="Twitter icon" /></a>
+                </li>
+                <li class="popup__social-link">
+                  <a href="#"><img src="./images/icon-pinterest.svg" alt="Pinterest icon" /></a>
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </section>
+      </article>
+    </main>
   </body>
 </html>

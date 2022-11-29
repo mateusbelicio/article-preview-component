@@ -3,3 +3,10 @@
 @import '03-generics/index';
 @import '04-components/index';
 @import '05-layouts/index';
+
+/* Only for demonstration */
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}

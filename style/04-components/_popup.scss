@@ -1,0 +1,78 @@
+.popup {
+  @include flex(row, center, flex-start, 1rem);
+  background-color: $clr-primary-500;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  padding: 1rem 2rem;
+  position: absolute;
+  transform: translateY(100%);
+  transition: all 0.2s ease-in;
+  width: 100%;
+  z-index: 5;
+
+  &__text {
+    color: $clr-primary-300;
+    font-size: $fs-300;
+    font-weight: $fw-500;
+    letter-spacing: 0.3125rem;
+    text-transform: uppercase;
+    z-index: inherit;
+  }
+
+  &__social-links {
+    @include flex(row, center);
+    list-style: none;
+    padding: 0;
+    z-index: inherit;
+
+    &:hover a:not(:hover) {
+      opacity: 0.5;
+    }
+  }
+
+  &__social-link {
+    a {
+      display: block;
+      padding: 0.5rem;
+      transition: transform 0.1s linear;
+    }
+
+    & > a:hover {
+      transform: translateY(-10%);
+    }
+  }
+}
+
+@include breakpoint(800) {
+  .popup {
+    @include flex(row, center, flex-start, 1rem);
+    border-radius: 0.625rem;
+    bottom: 5rem;
+    filter: drop-shadow(0 0.1rem 0.5rem rgba(0, 0, 0, 0.25));
+    height: auto;
+    left: auto;
+    padding: 0.5rem 2rem;
+    right: 3rem;
+    transform: translateX(50%) translateY(100%) scale(0);
+    width: max-content;
+
+    &::after {
+      content: '';
+      background-color: $clr-primary-500;
+      bottom: 0;
+      height: 1.5rem;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, 25%) rotate(45deg);
+      width: 1.5rem;
+      z-index: 0;
+    }
+
+    &__text {
+      font-size: $fs-200;
+    }
+  }
+}
